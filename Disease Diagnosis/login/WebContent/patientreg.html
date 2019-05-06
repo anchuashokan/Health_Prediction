@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body {font-family:Arial, Helvetica, san-serif;  background-image:url(D:/login_bg.jpg);;}
+{box-sizing : border-box;}
+
+input[type=text],input[type=number], input[type=password]{
+ width:50%;
+ padding:15px;
+ margin: 5px 0 22px 0;
+ display: inline-block;
+ border: none;
+ background:#f1f1f1;
+ }
+ input[type=text]:focus input[type=number],input[type=password]
+ {
+   background-color:#ddd;
+   outline:none;
+ }
+ hr{
+ border:1px solid #f1f1f1;
+ margin-bottom:25px;
+ }
+ button{
+ background-color:#4CAF50;
+ color:white;
+ padding:14px 20px;
+ margin:8px 0;
+ border:none;
+ cursor:pointer;
+ width:50%;
+ opacity:0.9;
+ }
+ button:hover{
+ opacity:1;
+ }
+ .cancelbtn{
+ padding:14px 20px;
+ background-color:#f44336;
+ }
+ .cancelbtn, .signupbtn{
+ float:left;
+ width:27%;
+ }
+ .container{
+ padding :16px;
+ }
+ .clearfix::after{
+ content:"";
+ clear:both;
+ display:table;
+ }
+ @media screen and(max-width:150px){
+    .cancelbtn, .signupbtn{
+    width:50%;
+    }}
+    </style>
+
+<body>
+<form action="patientregis" method="post">
+
+<h1>Sign Up</h1>
+<p>Please fill in this form to create an account</p>
+<label><b>Name</b></label><br>
+<input type="text" name="name" required><br>
+<label><b>Age</b></label><br>
+<input type="number" name="age" required><br>
+<label><b>Gender</b></label><br>
+<input type="radio" name="gender" value="male" checked> Male&nbsp
+  <input type="radio" name="gender" value="female"> Female&nbsp
+  <input type="radio" name="gender" value="other"> Other  <br>
+  <label><b>Blood Group</b></label><br>
+  <input type="text" name="bgp" required><br>
+  <label><b>Phone Number</b></label><br>
+  <input type="number" name="ph" required><br>
+  <label><b>Email id</b></label><br>
+  <input type="text" name="email" required><br>
+  <label><b>Userame</b></label><br> 
+  <input type="text" name="uname" required><br>
+  <label><b>Password</b></label><br>
+  <input type="password" name="pass" required>
+  <div class="clearfix">
+  <button type="button" class="cancelbtn">Cancel</button>
+  <button type="submit" class="signupbtn">SignUp</a></button>
+  </div>
+  </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="newfile.css"/>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+  body{
+        margin:0;
+        padding:0;
+        height:100%;
+        background-image:url(D:/login_bg.jpg);
+        background-repeat:no-repeat;
+        background-size:2000px 2000px;
+        background-position:center;
+        font-family:sans-serif;
+      }
+ .loginbox{
+        width:320px;
+        height:420px;
+        background:#000;
+        color:#fff;
+        top:50%;
+        left:50%;
+        position:absolute;
+        transform:translate(-60%,-60%);
+        box-sizing:border-box;
+        padding:70px 30px;
+     }
+     h1{
+       margin:0;
+       padding:0 0 20px;
+       text-align:center;
+       font-size:22px;
+     }
+    .loginbox label{
+        margin:0;
+        padding:0;
+        font-weight:bold;
+        }
+    .loginbox input{
+      width:100%;
+      margin-bottom:20px:
+    } 
+    .loginbox input[type="text"], input[type="password"]{
+       border:none;
+       border-bottom:1px solid #fff;
+       background:transparent;
+       outline:none;
+       height:40px;
+       color:#fff;
+       font-size:16px;
+    }   
+   .loginbox input[type="submit"]{
+          padding: 14px 20px;
+          margin: 8px 0;
+          border:none;
+         outline:none;
+         height:40px;
+         background: #fb2525;
+         color:#fff;
+         font-size:18px;
+         border-radius:20px;
+   }
+   .loginbox input[type="submit"]:hover{
+      cursor:pointer;
+      background:#ffc107;
+      color:#000;
+   }
+   .loginbox a{
+      text-decoration:none;
+      font-size:12px;
+      line-height:20px;
+      color:darkgrey;
+      
+   }
+    .loginbox a:hover{
+        color:#ffc107;
+    }
+
+</style>
+</head>
+<body>
+    <h3><img src="D://logo1.jpg" alt="logo" width="40px" />MaryGiri</h3>
+     <div class="loginbox">
+          <h1>Login Here </h1>
+          <form action="LoginController" method="post">
+           <label for="uname">Username</label><br>
+    <input type="text" placeholder="Enter Username" name="username" required><br>
+
+    <label for="psw">Password</label><br>
+    <input type="password" placeholder="Enter Password" name="password" required><br>
+        
+            <input type="submit" name="" value="login">
+            <a href="patientreg.html">Register here..</a>
+            
+            
+            
+          </form>
+     </div>
+</body>
+</html>

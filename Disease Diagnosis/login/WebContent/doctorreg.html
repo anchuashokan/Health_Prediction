@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+<body {font-family:Arial, Helvetica, san-serif; }
+{box-sizing : border-box;}
+
+input[type=text],input[type=number],input[type=date], input[type=password]{
+ width:50%;
+ padding:15px;
+ margin: 5px 0 22px 0;
+ display: inline-block;
+ border: none;
+ background:#f1f1f1;
+ }
+ input[type=text]:focus input[type=number],input[type=date],input[type=password]
+ {
+   background-color:#ddd;
+   outline:none;
+ }
+ hr{
+ border:1px solid #f1f1f1;
+ margin-bottom:25px;
+ }
+ button{
+ background-color:#4CAF50;
+ color:white;
+ padding:14px 20px;
+ margin:8px 0;
+ border:none;
+ cursor:pointer;
+ width:50%;
+ opacity:0.9;
+ }
+ button:hover{
+ opacity:1;
+ }
+ .cancelbtn{
+ padding:14px 20px;
+ background-color:#f44336;
+ }
+ .cancelbtn, .signupbtn{
+ float:left;
+ width:27%;
+ }
+ .container{
+ padding :16px;
+ }
+ .clearfix::after{
+ content:"";
+ clear:both;
+ display:table;
+ }
+ @media screen and(max-width:150px){
+    .cancelbtn, .signupbtn{
+    width:50%;
+    }}
+    </style>
+
+<body>
+<body background="D:\\admin.png"; center:center; background-size:cover; >
+<h3><img src="D://logo1.jpg" alt="logo" width="40px" />MaryGiri</h3>
+<form action="doctorregis" method="post">
+<div class="container">
+<h1>Add Doctor</h1>
+<label><b>Name</b></label><br>
+<input type="text" name="name" required><br>
+<label><b>Date of Birth</b></label><br>
+<input type="date" name="dob" required><br>
+<label><b>Gender</b></label><br>
+<input type="radio" name="gender" value="male" checked> Male&nbsp;
+  <input type="radio" name="gender" value="female"> Female&nbsp;
+  <input type="radio" name="gender" value="other"> Other  <br>
+  <label><b>Qualification</b></label><br>
+  <input type="text" name="quali" required><br>
+  <label><b>Department</b></label><br>
+  <input type="text" name="dept" required><br>
+  <label><b>Doctor_Id</b></label><br> 
+  <input type="text" name="did" required><br>
+  <label><b>Phone Number</b></label><br>
+  <input type="number" name="ph" required><br>
+  <label><b>Email id</b></label><br>
+  <input type="text" name="email" required><br>
+  <label><b>Userame</b></label><br> 
+  <input type="text" name="uname" required><br>
+  <label><b>Password</b></label><br>
+  <input type="password" name="pass" required>
+  <div class="clearfix">
+  <button type="button" class="cancelbtn">Cancel</button>
+  <button type="submit" class="signupbtn">Add</button>
+  </div>
+  </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+.grid{
+	display:grid ;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas:
+	"d1 d2"
+	"d3 d4"
+	"d5 d6"
+	
+}
+.d1{
+	grid-area:d1;
+	grid-column-end: span 1;
+	grid-row-end: span 2;
+}
+.d2
+{
+	grid-area:d2;
+}
+.d3
+{
+grid-area:d3;	
+}
+.d4
+{
+	grid-area:d4;
+}
+.d5
+{
+	grid-area:d5;
+}
+.d6
+{
+	grid-area:d6;
+}
+.grid div:nth-child(even){
+	background-color:red;
+	}
+.grid div:nth-child(odd){
+	background-color:#58ACFA;
+}	
+.p{
+	
+	text-align: top;
+	
+}
